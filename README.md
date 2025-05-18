@@ -3,7 +3,7 @@ Process rows in a CSV table with an LLM using aichat
 
 
 # Install
-Install uv. Uses uv and PEP 723 (see: https://thisdavej.com/share-python-scripts-like-a-pro-uv-and-pep-723-for-easy-deployment/)
+Install uv and aichat (https://github.com/sigoden/aichat). Uses uv and PEP 723 (see: https://thisdavej.com/share-python-scripts-like-a-pro-uv-and-pep-723-for-easy-deployment/)
 
 ```
 chmod +x process_table_llm.py
