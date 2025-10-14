@@ -11,7 +11,7 @@ import time
 from tqdm import tqdm
 
 
-def process_table_llm(input_file, prompt, sleep_time=1, out_file="out.csv", model="ollama:gemma2:27b", new_col="new", verbose=False):
+def process_table_llm(input_file, prompt, sleep_time=1, out_file="out.csv", model="ollama:gpt-oss:20b", new_col="new", verbose=False):
     # Load the data
     org_dat = pd.read_csv(input_file)
     dat = org_dat.copy()
