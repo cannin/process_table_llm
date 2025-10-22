@@ -14,7 +14,7 @@ chmod +x process_table_llm.py
 Example:
 
 ```
-./process_table_llm.py --input_file="mtcars.csv" --prompt="a single letter followed by the sum of {row[\"carb\"]} and {row[\"gear\"]}; single line; no explanation" --verbose
+./process_table_llm.py --input_file="mtcars.csv" --model=ollama:gemma2:27b --prompt="a single letter followed by the sum of {row[\"carb\"]} and {row[\"gear\"]}; single line; no explanation" --verbose
 ```
 
 Access columns with {row[\"COLUMN_NAME\"]}; this is done with Python f-strings. 
