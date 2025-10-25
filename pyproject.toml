@@ -1,0 +1,9 @@
+[project]
+name = "process_table_llm"
+version = "0.1.0"
+description = "A script that process each line of a CSV with an LLM from the command-line"
+requires-python = ">=3.10"
+dependencies = [
+    "pandas",
+    "tqdm",
+]

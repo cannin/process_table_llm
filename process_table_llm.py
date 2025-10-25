@@ -20,7 +20,7 @@ def process_table_llm(input_file, prompt, sleep_time=1, out_file="out.csv", mode
     for i, row in tqdm(dat.iterrows(), total=dat.shape[0], desc="Processing"):
         # Construct the prompt
         final_prompt = eval(f"f'{prompt}'")
-        cmd = f"aichat --role %functions% --model {model} '{final_prompt}'"
+        cmd = f"aichat --role %functions% --model {model} --no-stream '{final_prompt}'"  
 
         # Print the command being executed
         if verbose:
